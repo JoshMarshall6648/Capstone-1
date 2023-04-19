@@ -1,0 +1,25 @@
+/* custom.css */
+
+.navbar-toggler {
+    background-color: #f57c00; /* Change the color here */
+    padding: 8px 12px; /* Adjust padding here */
+  }
+  
+  /* custom.css */
+
+.navbar-nav {
+    flex-grow: 1;
+  }
+  
+  .form-inline {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  @media (min-width: 992px) {
+    .form-inline {
+      width: auto;
+    }
+  }
+  
