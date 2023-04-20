@@ -23,3 +23,11 @@
     }
   }
   
+  .navbar-brand {color: rgb(89, 89, 192);}
+
+  
+  .navbar-custom {
+    background-color: #007bff;
+  }
+
+  .jumbotron {background-color: rgb(236, 244, 244);}
