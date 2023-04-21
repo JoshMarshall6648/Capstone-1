@@ -1,33 +1,45 @@
-/* custom.css */
-
-.navbar-toggler {
-    background-color: #f57c00; /* Change the color here */
-    padding: 8px 12px; /* Adjust padding here */
-  }
-  
-  /* custom.css */
 
 .navbar-nav {
-    flex-grow: 1;
-  }
-  
+  flex-grow: 1;
+}
+
+.form-inline {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 992px) {
   .form-inline {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+    width: auto;
   }
-  
-  @media (min-width: 992px) {
-    .form-inline {
-      width: auto;
-    }
-  }
-  
-  .navbar-brand {color: rgb(89, 89, 192);}
+}
 
-  
-  .navbar-custom {
-    background-color: #007bff;
-  }
+.navbar-custom .navbar-brand {
+  display: flex;
+  align-items: center;
+}
 
-  .jumbotron {background-color: rgb(236, 244, 244);}
+.navbar-brand span {
+  font-size: 1.8rem;
+  color: white; /* Increase the font size of MPStore */
+}
+
+.navbar-custom .nav-link {
+  color: #fbf4f4; /* White text color */
+  font-size: 1.2rem; /* Increase font size */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #cccccc; /* Lighter color on hover */
+}
+
+.jumbotron {
+  background-color: rgb(236, 244, 244);
+}
+
+
+.navbar-custom {
+  background-color:rgb(4, 4, 4);
+  padding: 0.5rem 1rem; /* Reduce the padding of the navbar */; /* Blue background color */
+}

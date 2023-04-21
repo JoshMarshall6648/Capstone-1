@@ -8,40 +8,65 @@
       rel="stylesheet"
     />
     <link href="custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>E-commerce Website - Register</title>
+    <style>
+      body {
+        background-color: #a0a7af; 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      body {
+    font-size: 1.25rem;
+    color: #010912; /* Increase the base font size */
+  }
+
+  h1 {
+    font-size: 5rem; /* Increase the size of the heading */
+  }
+
+  label {
+    font-size: 1.5rem; /* Increase the size of the labels */
+  }
+    </style>
   </head>
   <body>
+    <!-- Header and navbar code -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between navbar-custom">
-        <a class="navbar-brand" href="#">TechStore</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <nav class="navbar navbar-expand-lg navbar-light  navbar-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <span class="mr-2">MPSTORE</span>
+            <img
+              src="photos/logo4.jpg"
+              width="200"
+              height="150"
+              class="d-inline-block align-top"
+              alt="MPStore"
+            />
+          </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+          <!-- navbar code -->
+          <ul class="navbar-nav ms-auto"> 
+            <li class="nav-item active">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="products.html">Products</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="checkout.html">Checkout</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="login.html">Login</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="register.html">Register <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <form class="d-lg-inline-flex form-inline ms-lg-auto my-2 my-lg-0">
             <input
               class="form-control mr-sm-2"
               type="search"
@@ -55,33 +80,78 @@
         </div>
       </nav>
     </header>
-
-    <main>
-      <div class="container">
-        <h1>Register</h1>
-    
-            <form>
-              <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" required>
-      </div>
+    <!-- Main Content -->
+    <main class="vh-100 d-flex align-items-center">
+      <section class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+          <h1>Register</h1>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputName">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputName"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword2">Confirm Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword2"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="howDidYouHearAboutUs"
+                >How did you hear about us?</label
+              >
+              <select class="form-select" id="howDidYouHearAboutUs">
+                <option value="friend">Friend</option>
+                <option value="social_media">Social Media</option>
+                <option value="search_engine">Search Engine</option>
+                <option value="advertisement">Advertisement</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
-
-    <footer>
-      <div class="container">
-        <p>&copy; TechStore 2023. All Rights Reserved.</p>
+    
+    <footer class="footer">
+      <div class="container text-center">
+        <p>&copy; MPStore 2023 by Murat Polat </p>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    
   </body>
 </html>
